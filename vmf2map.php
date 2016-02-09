@@ -1061,6 +1061,14 @@ function getNewMaterial($materialname)
         $material = "mtl_caen_brick_damaged1";
         break;
 
+    case "BRICK/BRICKWALL003A":
+        $material = "mtl_caen_brick_damaged1";
+        break;
+
+    case "BRICK/BRICKWALL017A":
+        $material = "mtl_caen_wall_ext_brick_02";
+        break;
+
     case "BRICK/WALL028":
         $material = "mtl_caen_wall_churchstone_01";
         break;
