@@ -885,6 +885,10 @@ function getNewMaterial($materialname)
         $material = "clip_weap_glass";
         break;
 
+    case "GLASS/GLASSWINDOW070C":
+        $material = "clip_weap_glass";
+        break;
+
     case "GLASS/GLASSWINDOW006B":
         $material = "stalingradwinter_window01_unlit";
         break;
@@ -1127,6 +1131,14 @@ function getNewMaterial($materialname)
 
     case "METAL/METALTRACK001A":
         $material = "egypt_metal_rebar";
+        break;
+
+    case "METAL/METALFLOOR003A":
+        $material = "mtl_silo_metal_02";
+        break;
+
+    case "METAL/METALFLOOR001A":
+        $material = "egypt_metal_broken_generic1";
         break;
 
     case "PLASTER/PLASTERCEILING005A":
