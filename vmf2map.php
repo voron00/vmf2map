@@ -159,7 +159,8 @@ function parseVMF($vmfString)
 			$key = $keys[0];
 			$val = $element[$key];
 
-			$n = count($parent);
+			if ($debug)
+				$n = count($parent);
 
 			$parent[$key] = $val;
 		}
@@ -880,7 +881,7 @@ function getNewWeapon($weaponname)
 
 function getNewMaterial($materialname)
 {
-	$material = "case1024";
+	$material = $materialname;
 	$materialname = strtoupper($materialname);
 
 	switch($materialname)
