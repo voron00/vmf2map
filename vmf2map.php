@@ -52,7 +52,7 @@ function parseVMF($vmfString)
 
 	for ($i = 0; $i < $len; $i++)
 	{
-		$c = $vmfString{$i}; // current char
+		$c = $vmfString[$i]; // current char
 
 		switch ($c)
 		{
@@ -575,10 +575,7 @@ function exportVMFasMAP($vmf)
 		$z = $pieces[2]-8;
 
 		$origin = "$x $y $z";
-		$radius = $entity["_distance"];
-
-		if (!$radius)
-			$radius = 250;
+		$radius = $entity["_distance"] ?? null;
 
 		if ($entity["_light"])
 		{
