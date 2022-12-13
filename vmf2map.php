@@ -575,7 +575,15 @@ function exportVMFasMAP($vmf)
 		$z = $pieces[2]-8;
 
 		$origin = "$x $y $z";
-		$radius = $entity["_distance"] ?? null;
+		$distance = $entity["_distance"] ?? null;
+
+		if ($distance)
+			$radius = $entity["_distance"];
+		else
+			$radius = 250;
+
+		if (!$radius)
+			$radius = 250;
 
 		if ($entity["_light"])
 		{
